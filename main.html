@@ -1,40 +1,96 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-TW">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>網頁作業</title>
+    <title>我的作品集 - 蘇鈵峰</title>
 </head>
 <body>
     <header>
-        <h1>網頁作業</h1>
-        <h2>我的作品集</h2>
+        <div class="logo">鈵峰 作業2</div>
         <nav>
             <ul>
-                <li><a href="main.html">首頁</a></li>
-                <li><a href="about.html">關於我</a></li>
-                <li><a href="projects.html">作品集</a></li>
-                <li><a href="contact.html">聯絡我</a></li>
+                <li><a href="#home">首頁</a></li>
+                <li><a href="#about">關於我</a></li>
+                <li><a href="#portfolio">作品集</a></li>
+                <li><a href="#contact">聯絡我</a></li>
             </ul>
         </nav>
     </header>
+
     <main>
-        <section>
-            <h3>歡迎來到我的作品集</h3>
-            <p>這裡展示了我過去的專案和作品，請隨意瀏覽！</p>
+        <section id="home" class="hero">
+            <div class="hero-content">
+                <h1>探PHP與程式的交界</h1>
+                <p>我是蘇鈵峰，專注於 PHP 網頁開發與資訊安全的學習者。</p>
+                <a href="#portfolio" class="cta-button">查看我的作品</a>
+            </div>
         </section>
-        <section class="about">about me</section>
-        <section class="portfolio">
-            <h3>作品</h3>
-            <ul>
-                <li><a href="project1.html">a</a></li>
-                <li><a href="project2.html">b</a></li>
-                <li><a href="project3.html">c</a></li>
-            </ul>
+
+        <section id="about" class="about">
+            <div class="about-container">
+                <div class="about-image">
+                    <img src="C:\laragon\www\U1133130\assignment-2\螢幕擷取畫面 2026-03-14 195800.png" alt="個人照">
+                </div>
+                <div class="about-text">
+                    <h3>關於我</h3>
+                    <p>目前就讀資管系，從 C++ 的邏輯訓練到 PHP 的後端開發，能順利學習好這門課。</p>
+                    <p>預計 2026 年畢業，目前正積極累積專案經驗並準備研究所進修。</p>
+                </div>
+            </div>
         </section>
-        <footer>
-            <p>&copy; 2026 我的作品集. All rights reserved.</p>
-        </footer>
+
+        <section id="portfolio" class="portfolio">
+            <h3>精選作品</h3>
+            <div class="card-grid">
+                <div class="card">
+                    <div class="card-info">
+                        <h4>PHP 資料庫系統</h4>
+                        <p>結合 MySQL 的個人化網站，實現動態資料管理。</p>
+                        <a href="#">了解更多</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-info">
+                        <h4>C++ 矩陣運算工具</h4>
+                        <p>處理複雜資料結構與矩陣邏輯的桌面程式。</p>
+                        <a href="#">了解更多</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-info">
+                        <h4>資訊安全研究</h4>
+                        <p>探討數位簽章與平台包封技術的安全性分析。</p>
+                        <a href="#">了解更多</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="contact-section">
+    <div class="container">
+        <h2>聯絡我</h2>
+        <div class="contact-card">
+            <p><strong>電子郵件：</strong> <a href="mailto:your-email@example.com">U1133130@365.nuu.edu.tw</a></p>
+            <p><strong>聯絡電話：</strong> 0975-967-169</p>
+
+            <hr>
+            <div class="social-links">
+                <p>也可以透過以下方式找到我：</p>
+                <a href="#" class="social-btn">Facebook</a>
+               <a href="https://www.instagram.com/bingfongsu/" class="social-btn" target="_blank">Instagram</a>
+            </div>
+        </div>
+    </div>
+</section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 蘇鈵峰. All rights reserved.</p>
+        <div class="social-links">
+            <a href="#">GitHub</a> | <a href="#">LinkedIn</a>
+        </div>
+    </footer>
 </body>
 </html>
